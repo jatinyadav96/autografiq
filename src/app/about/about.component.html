@@ -1,0 +1,115 @@
+<div class="myslider">
+  <div class="mycontainer">
+    <div class="block" (mouseenter)="open('Branding')" (mousemove)="open('Branding')" (mouseleave)="close('Branding')">
+      <div class="titleBox" *ngIf="!showBranding">
+        <div class="line"></div>
+        <div class="title">Branding</div>
+      </div>
+      <div class="black"></div>
+      <div class="content-container branding" [ngClass]="['contentContainer']" *ngIf="showBranding">
+        <h1 class="ft-2">Branding</h1>
+        <ul>
+          <li>Strategy & Ideation</li>
+          <li>Brand Positioning</li>
+          <li>Brands Identity Design (3 Routes)</li>
+          <li>Standard Brand Guidelines</li>
+        </ul>
+
+        <h1 class="ft-3">Stationary Design Consist of:</h1>
+        <ul>
+          <li>Envelope</li>
+          <li>Visiting Card</li>
+          <li>Letterhead</li>
+        </ul>
+        <h1 class="ft-3">Marketing Collaterals</h1>
+        <ul>
+          <li>T-Shirts</li>
+          <li>ID Card</li>
+          <li>Other required Merchandise</li>
+        </ul>
+      </div>
+      <div class="bg-image"></div>
+    </div>
+    <div class="block" (mousemove)="open('MotionGraphics')" (mouseleave)="close('MotionGraphics')">
+      <div class="titleBox">
+        <div class="line"></div>
+        <div class="title">
+          <div class="mg-bt">Motion</div>
+          <div class="mg-bt">Graphics</div>
+        </div>
+      </div>
+      <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showMotionGraphics">
+        <h1 class="ft-2">Motion Graphics</h1>
+        <h1 class="ft-3">Commercials</h1>
+        <ul>
+          <li>Explainer Videos</li>
+          <li>Promotional Videos</li>
+        </ul>
+
+        <h1 class="ft-3">Video Editing</h1>
+        <ul>
+          <li>Increase engagement &conversions</li>
+          <li>To draw attention</li>
+        </ul>
+        <h1 class="ft-3">Working</h1>
+        <ul>
+          <li>Scripting & Scene direction</li>
+          <li>story board</li>
+          <li>Artwork</li>
+          <li>voice over (if required)</li>
+          <li>Animation / Video clips</li>
+        </ul>
+      </div>
+    </div>
+    <div class="block" (mousemove)="open('SocialMediaAssets')" (mouseleave)="close('SocialMediaAssets')">
+      <div class="titleBox">
+        <div class="line"></div>
+        <div class="title">
+          <div class="mg-bt">Social</div>
+          <div class="mg-bt">Media</div>
+          <div class="mg-bt">Assets</div>
+        </div>
+      </div>
+      <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showSocialMediaAssets">
+        <h1 class="ft-2">Social Media Assets</h1>
+        <ul>
+          <li>Static Graphics</li>
+          <li>GIF's</li>
+          <li>Video Graphics</li>
+          <li>Story Graphics</li>
+          <li>Polls & Surveys</li>
+          <li>Holiday Posts</li>
+          <li>Quick Tips</li>
+          <li>Infographics</li>
+          <li>Quotes / Memes</li>
+          <li>Workplace / BTS posts</li>
+          <li>Customer reviews & testimonials</li>
+        </ul>
+      </div>
+    </div>
+    <div class="block" (mousemove)="open('UIDesign')" (mouseleave)="close('UIDesign')">
+      <div class="titleBox">
+        <div class="line"></div>
+        <div class="title">
+          <div class="mg-bt">UI Designing</div>
+          <div class="mg-bt">& Web</div>
+          <div>Development</div>
+        </div>
+      </div>
+      <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showUIDesign">
+        <h1 class="ft-2">UI Design</h1>
+        <ul>
+          <li>Home & Menu Screen</li>
+          <li>Login & Profile Screen</li>
+          <li>E-Commerce Screen</li>
+          <li>Music Screen</li>
+        </ul>
+        <h1 class="ft-3">Website development</h1>
+        <h1 class="ft-3">App development</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="logo">
+  <img src="../../assets/logo.png" alt="AUTOGRAFIQ" />
+</div>

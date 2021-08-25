@@ -1,0 +1,118 @@
+.navbarhover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  // background-color: black;
+
+  .blackBox {
+    // position: fixed;
+    height: 1000px;
+    width: 100px;
+    bottom: 0%;
+    margin-left: 100px;
+    background-color: var(--primary-color);
+    transform: translateX(50%) skewX(var(--rotate));
+    // transform: ;
+    transition: transform 1s;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  border: #cec8c8 1px;
+  border-style: solid;
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .box {
+      width: 100px;
+      margin-left: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      // background-color: black;
+      // transform: skewX(var(--rotate));
+
+      a {
+        text-decoration: none;
+        color: #01baef;
+        font-size: 20px;
+        font-family: JosefinSansBoldItalic;
+      }
+    }
+  }
+}
+
+.box:hover {
+  // background-color: black;
+  transform: skewX(var(--rotate));
+}
+// a:hover {
+//   color: black;
+// }
+// .navbar a.active {
+//   color: #01baef;
+// }
+
+.main {
+  // width: 100%;
+  height: 104vh;
+  // margin-bottom: 10%;
+  // position: absolute;
+  // overflow: auto; /* Hide vertical scrollbar */
+}
+
+@keyframes text-animation {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100px;
+  }
+  60% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.outer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  overflow: hidden;
+  // background-color: black;
+  transform-origin: 0 0;
+  animation-name: text-animation;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-out;
+  .inner {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    // background-color: yellow;
+    float: left;
+    position: relative;
+    span {
+      // color: white;
+      font-size: 90px;
+      position: relative;
+      font-family: Aquire;
+      top: 40px;
+      left: 20px;
+    }
+  }
+}

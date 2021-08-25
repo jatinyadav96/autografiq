@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+// html,
+// body {
+//   max-width: 100%;
+//   overflow-y: hidden;
+// }
+:root {
+  --rotate: -8deg;
+  --rotate-slider: -20deg;
+  --rotate-slider-neg: 20deg;
+  --primary-color: #01baef;
+}
+
+// html,
+// body {
+//   height: 100%;
+// }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: Riviera;
+  src: url(assets/fonts/Riviera.otf);
+}
+
+@font-face {
+  font-family: Caeldera;
+  src: url(assets/fonts/Caeldera-ZB8.ttf);
+}
+
+@font-face {
+  font-family: Aquire;
+  src: url(assets/fonts/Aquire-BW0ox.otf);
+}
+
+@font-face {
+  font-family: JosefinSansBoldItalic;
+  src: url(assets/fonts/JosefinSansBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: JosefinSansRegular;
+  src: url(assets/fonts/JosefinSansRegular-x3LYV.ttf);
+}
+
+.hide {
+  opacity: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

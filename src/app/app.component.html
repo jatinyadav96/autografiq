@@ -1,0 +1,57 @@
+<div class="main">
+  <router-outlet></router-outlet>
+  <!--<div class="navbarhover">
+     <div class="blackBox"></div>
+    <div class="blackBox"></div>
+    <div class="blackBox"></div>
+    <div class="blackBox"></div> -->
+  <!-- <div class="blackBox" [ngClass]="[isHome]"></div>
+    <div class="blackBox" [ngClass]="[isAbout]"></div>
+    <div class="blackBox" [ngClass]="[isInside]"></div>
+    <div class="blackBox" [ngClass]="[isContact]"></div> 
+  </div> -->
+</div>
+
+<div class="navbar">
+  <div class="container">
+    <div class="box">
+      <a routerLink="/home" (mouseenter)="mouseEnter('home')" (mouseleave)="mouseLeave()"
+        routerLinkActive="active">HOME</a>
+    </div>
+    <div class="box">
+      <a routerLink="/about" (mouseenter)="mouseEnter('about')" (mouseleave)="mouseLeave()"
+        routerLinkActive="active">SERVICES</a>
+    </div>
+    <div class="box">
+      <a routerLink="/client" (mouseenter)="mouseEnter('inside')" (mouseleave)="mouseLeave()"
+        routerLinkActive="active">INSIDE</a>
+    </div>
+    <div class="box">
+      <a routerLink="/contact" (mouseenter)="mouseEnter('contact')" (mouseleave)="mouseLeave()"
+        routerLinkActive="active">CONTACT</a>
+    </div>
+  </div>
+</div>
+<!-- <div class="title">
+  <div class="outer">
+    <div class="inner">
+      <span>A</span>
+    </div>
+  </div>
+  <div class="outer" style="margin-left: 130px">
+    <div class="inner">
+      <span>B</span>
+    </div>
+  </div>
+  <div class="outer" style="margin-left: 260px">
+    <div class="inner">
+      <span>C</span>
+    </div>
+  </div>
+</div> -->
+
+<!-- <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item> A </mdb-carousel-item>
+  <mdb-carousel-item>B </mdb-carousel-item>
+  <mdb-carousel-item>C </mdb-carousel-item>
+</mdb-carousel> -->
