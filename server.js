@@ -1,16 +1,20 @@
-//Install express server
 const express = require('express');
+const http = require('http');
 const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname +'/dist'));
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+const port = process.env.PORT || 3001;
 
-app.get('/*', (req, res) =>
-    res.sendFile(path.join(__dirname + 'dist/index.html'))
-);
+app.use(express.static(__dirname + '/dist/autografiq'));
 
-console.log('server is running....');
+app.get('/*', (req, res) => {
+    // console.log(path.join(__dirname));
+    res.sendFile(path.join(__dirname));
+    // console.log(req);
+    // console.log(res);
+});
+
+const server = http.createServer(app);
+
+server.listen(port, () => console.log(`App running on: http://localhost:${port}`));
