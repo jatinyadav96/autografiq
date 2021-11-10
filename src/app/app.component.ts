@@ -30,8 +30,8 @@ export class AppComponent {
         this.isContact = 'show';
         break;
     }
-    await this.doNothing();
-    this.router.navigate(['/' + link]); // For: enable hover link change
+    // await this.doNothing();
+    // this.router.navigate(['/' + link]); // For: enable hover link change
   }
   doNothing() {
     return new Promise((res) => setTimeout(res, 500));

@@ -2,12 +2,17 @@
   <div class="mycontainer">
     <div class="block" (mouseenter)="open('Branding')" (mousemove)="open('Branding')" (mouseleave)="close('Branding')">
       <div class="titleBox" *ngIf="!showBranding">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="title">Branding</div>
       </div>
-      <div class="black"></div>
+      <div class="inner-line" *ngIf="showBranding"></div>
+      <div class="inner-title" *ngIf="showBranding">Branding</div>
+      <div class="black" *ngIf="showBranding">
+        <img style="margin-left: -150px;" src="../../assets/s2.png" />
+        <!-- <div class="title">Branding</div> -->
+      </div>
       <div class="content-container branding" [ngClass]="['contentContainer']" *ngIf="showBranding">
-        <h1 class="ft-2">Branding</h1>
+        <!-- <h1 class="ft-2">Branding</h1> -->
         <ul>
           <li>Strategy & Ideation</li>
           <li>Brand Positioning</li>
@@ -32,11 +37,14 @@
     </div>
     <div class="block" (mousemove)="open('MotionGraphics')" (mouseleave)="close('MotionGraphics')">
       <div class="titleBox">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="title">
           <div class="mg-bt">Motion</div>
-          <div class="mg-bt">Graphics</div>
+          <!-- <div class="mg-bt">Graphics</div> -->
         </div>
+      </div>
+      <div class="black" *ngIf="showMotionGraphics">
+        <img src="../../assets/s3.png" />
       </div>
       <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showMotionGraphics">
         <h1 class="ft-2">Motion Graphics</h1>
@@ -63,12 +71,11 @@
     </div>
     <div class="block" (mousemove)="open('SocialMediaAssets')" (mouseleave)="close('SocialMediaAssets')">
       <div class="titleBox">
-        <div class="line"></div>
-        <div class="title">
-          <div class="mg-bt">Social</div>
-          <div class="mg-bt">Media</div>
-          <div class="mg-bt">Assets</div>
-        </div>
+        <!-- <div class="line"></div> -->
+        <div class="title">UI&3D</div>
+      </div>
+      <div class="black" *ngIf="showSocialMediaAssets">
+        <img src="../../assets/s4.png" />
       </div>
       <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showSocialMediaAssets">
         <h1 class="ft-2">Social Media Assets</h1>
@@ -89,12 +96,15 @@
     </div>
     <div class="block" (mousemove)="open('UIDesign')" (mouseleave)="close('UIDesign')">
       <div class="titleBox">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="title">
           <div class="mg-bt">UI Designing</div>
           <div class="mg-bt">& Web</div>
           <div>Development</div>
         </div>
+      </div>
+      <div class="black" *ngIf="showUIDesign">
+        <img src="../../assets/s5.png" />
       </div>
       <div class="content-container" [ngClass]="['contentContainer']" *ngIf="showUIDesign">
         <h1 class="ft-2">UI Design</h1>

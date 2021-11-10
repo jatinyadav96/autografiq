@@ -1,9 +1,7 @@
 #myVideo {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 120%;
+  right: 10px;
+  top: 0;
 }
 
 .logo {
@@ -14,6 +12,16 @@
     margin-left: 8px;
     margin-top: 0px;
   }
+}
+
+.sliderImg {
+  margin-right: 15px;
+}
+
+.sliderComponent {
+  transform-origin: left;
+  transform: translate(0%, -120%) rotate(30deg);
+  width: 130%;
 }
 
 .mycontainer {
@@ -245,4 +253,45 @@ div.cube {
   // 100% {
   // box-shadow: inset 0 0 3px 0px #01baef;
   // }
+}
+
+.text {
+  // height: 500px;
+  // width: 500px;
+  position: fixed;
+  bottom: 250px;
+  left: 50px;
+
+  h1 {
+    font-family: NoirBold;
+    font-weight: 800;
+    font-size: 5.5em;
+    width: 9.6em;
+    line-height: 0.9em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-top: calc(50vh - 1em);
+  }
+
+
+  .gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: red;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(130deg, #D8E4F2, #116FE5);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 }

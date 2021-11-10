@@ -1,12 +1,21 @@
 .myslider {
-  width: 2500px;
+  // width: 2500px;
   height: 100%;
-  background-color: black;
-  padding-left: 120px;
-  position: absolute;
+  // background-color: black;
+  padding-left: 500px;
+  // position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .mycontainer {
-    // width: 2500px;
+    width: 2000px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -16,6 +25,7 @@
       height: 100%;
       width: 520px;
       width: 320px;
+      // background-color: black;
       border-left-color: var(--primary-color);
       border-left-width: 1px;
       border-left-style: solid;
@@ -39,18 +49,18 @@
           height: 54px;
         }
 
-        .title {
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          margin-left: 28px;
-          margin-top: 14px;
-          font-size: 35px;
-          font-family: JosefinSansBoldItalic;
-          // font-weight: 900;
-          color: var(--primary-color);
-          transform: skewX(var(--rotate-slider-neg));
-        }
+        // .title {
+        //   display: flex;
+        //   flex-direction: column;
+        //   position: absolute;
+        //   margin-left: 28px;
+        //   margin-top: 14px;
+        //   font-size: 35px;
+        //   font-family: JosefinSansBoldItalic;
+        //   // font-weight: 900;
+        //   color: var(--primary-color);
+        //   transform: skewX(var(--rotate-slider-neg));
+        // }
       }
 
       .content-container {
@@ -99,7 +109,7 @@
     .block:hover {
       width: 1000px;
       // background: url(../../assets/background.jpeg) no-repeat 0 2px;
-      background-color: var(--primary-color);
+      background-color: #01bbefc5;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -136,4 +146,48 @@
 
 .ft-3 {
   font-size: 25px;
+}
+
+.black {
+  transform: skewX(var(--rotate-slider-neg));
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  opacity: 0.2;
+}
+
+.title {
+  // display: flex;
+  // flex-direction: column;
+  // position: absolute;
+  margin-left: 28px;
+  margin-top: 28px;
+  font-size: 35px;
+  opacity: 1;
+  font-family: JosefinSansBoldItalic;
+  // font-weight: 900;
+  color: white;
+  transform: skewX(var(--rotate-slider-neg));
+}
+
+.inner-title {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  font-size: 35px;
+  opacity: 1;
+  font-family: JosefinSansBoldItalic;
+  color: white;
+  z-index: 1;
+  transform: skewX(var(--rotate-slider-neg));
+}
+
+.inner-line {
+  position: fixed;
+  top: 80px;
+  background-color: white;
+  width: 90%;
+  height: 3px;
+  margin-left: 50px;
+  // margin-right: 25px;
 }

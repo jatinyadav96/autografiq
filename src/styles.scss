@@ -6,8 +6,8 @@
 // }
 :root {
   --rotate: -8deg;
-  --rotate-slider: -20deg;
-  --rotate-slider-neg: 20deg;
+  --rotate-slider: -18deg;
+  --rotate-slider-neg: 18deg;
   --primary-color: #01baef;
 }
 
@@ -18,7 +18,8 @@
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
 }
 
 body::-webkit-scrollbar {
@@ -50,9 +51,36 @@ body::-webkit-scrollbar {
   src: url(assets/fonts/JosefinSansRegular-x3LYV.ttf);
 }
 
+@font-face {
+  font-family: NoirBold;
+  src: url(assets/fonts/NoirPro-Bold.otf);
+}
+
+@font-face {
+  font-family: NoirLight;
+  src: url(assets/fonts/NoirPro-Light.otf);
+}
+
+@font-face {
+  font-family: NoirMedium;
+  src: url(assets/fonts/NoirPro-Medium.otf);
+}
+
+@font-face {
+  font-family: NoirSemiBold;
+  src: url(assets/fonts/NoirPro-SemiBold.otf);
+}
+
 .hide {
   opacity: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
